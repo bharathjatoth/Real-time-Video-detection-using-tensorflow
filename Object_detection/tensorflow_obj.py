@@ -1,13 +1,3 @@
-
-# coding: utf-8
-
-# # Object Detection Demo
-# Welcome to the object detection inference walkthrough!  This notebook will walk you step by step through the process of using a pre-trained model to detect objects in an image. Make sure to follow the [installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) before you start.
-
-# # Imports
-
-# In[12]:
-
 import numpy as np
 import os
 import six.moves.urllib as urllib
@@ -142,7 +132,7 @@ IMAGE_SIZE = (12, 8)
 
 
 # In[21]:
-
+#this we will detect the images with bounding boxes with probabilities
 with detection_graph.as_default():
   with tf.Session(graph=detection_graph) as sess:
     while True:
